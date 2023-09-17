@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>KCITunesAPIQueryService Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/KCITunesAPIQueryService" class="dashAnchor"></a>
+    <a title="KCITunesAPIQueryService Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        KCITunesAPIQueryService Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/KCITunesAPIQueryService.html">KCITunesAPIQueryService</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/KCItunesAlbum.html">KCItunesAlbum</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KCItunesArtist.html">KCItunesArtist</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KCItunesConstants.html">KCItunesConstants</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KCItunesConstants/NetworkError.html">– NetworkError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KCItunesParamCountry.html">KCItunesParamCountry</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KCItunesParamCountryManager.html">KCItunesParamCountryManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KCItunesParamLang.html">KCItunesParamLang</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KCItunesParamLangManager.html">KCItunesParamLangManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KCItunesParamMediaType.html">KCItunesParamMediaType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KCItunesParamMediaTypeManager.html">KCItunesParamMediaTypeManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KCItunesSong.html">KCItunesSong</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>KCITunesAPIQueryService</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">KCITunesAPIQueryService</span></code></pre>
+
+                </div>
+              </div>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:37KeysocItunesSearchAPIServiceiOS_Swift23KCITunesAPIQueryServiceC6sharedACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/shared" class="dashAnchor"></a>
+                    <a class="token" href="#/s:37KeysocItunesSearchAPIServiceiOS_Swift23KCITunesAPIQueryServiceC6sharedACvpZ">shared</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">shared</span><span class="p">:</span> <span class="kt">KCITunesAPIQueryService</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:37KeysocItunesSearchAPIServiceiOS_Swift23KCITunesAPIQueryServiceC11searchSongs9withQuery5limit6offset9mediaType7country4lang10completionySS_S2iSSSgA2Lys6ResultOySayAA12KCItunesSongVGs5Error_pGctF"></a>
+                    <a name="//apple_ref/swift/Method/searchSongs(withQuery:limit:offset:mediaType:country:lang:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:37KeysocItunesSearchAPIServiceiOS_Swift23KCITunesAPIQueryServiceC11searchSongs9withQuery5limit6offset9mediaType7country4lang10completionySS_S2iSSSgA2Lys6ResultOySayAA12KCItunesSongVGs5Error_pGctF">searchSongs(withQuery:<wbr>limit:<wbr>offset:<wbr>mediaType:<wbr>country:<wbr>lang:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Runs iTunes search API for songs</p>
+
+<ul>
+<li><p>Usage example:</p></li>
+</ul>
+<pre class="highlight swift"><code><span class="kt">KCITunesAPIQueryService</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">searchSongs</span><span class="p">(</span>
+    <span class="nv">withQuery</span><span class="p">:</span> <span class="s">"Alex"</span><span class="p">,</span>
+    <span class="nv">limit</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="nv">offset</span><span class="p">:</span> <span class="n">page</span> <span class="o">*</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="nv">mediaType</span><span class="p">:</span> <span class="s">"podcast"</span><span class="p">,</span>
+    <span class="nv">country</span><span class="p">:</span> <span class="s">"US"</span><span class="p">,</span>
+    <span class="nv">lang</span><span class="p">:</span> <span class="s">"en_us"</span>
+<span class="p">)</span> <span class="p">{</span> <span class="p">[</span><span class="k">weak</span> <span class="k">self</span><span class="p">]</span> <span class="n">result</span> <span class="k">in</span>
+    <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
+        <span class="k">case</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="k">let</span> <span class="nv">songs</span><span class="p">):</span>
+        <span class="o">...</span>
+        <span class="k">case</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span>
+        <span class="o">...</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">searchSongs</span><span class="p">(</span>
+    <span class="n">withQuery</span> <span class="nv">query</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+    <span class="nv">limit</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="nv">offset</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="nv">mediaType</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">country</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">lang</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Result</span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Structs/KCItunesSong.html">KCItunesSong</a></span><span class="p">],</span> <span class="kt">Error</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>limit</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>list limit,</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>offset</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>list / page offset,</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>mediaType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>String?</code>, refer to <code>KCITunesParamMediaType</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>country</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>String?</code>, refer to <code>KCITunesParamCountry</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>lang</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>String?</code>, refer to <code>KCITunesParamLang</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Callback of <code><a href="../Structs/KCItunesSong.html">KCItunesSong</a></code> list array, or any network error</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:37KeysocItunesSearchAPIServiceiOS_Swift23KCITunesAPIQueryServiceC12searchAlbums9withQuery5limit6offset9mediaType7country4lang10completionySS_S2iSSSgA2Lys6ResultOySayAA13KCItunesAlbumVGs5Error_pGctF"></a>
+                    <a name="//apple_ref/swift/Method/searchAlbums(withQuery:limit:offset:mediaType:country:lang:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:37KeysocItunesSearchAPIServiceiOS_Swift23KCITunesAPIQueryServiceC12searchAlbums9withQuery5limit6offset9mediaType7country4lang10completionySS_S2iSSSgA2Lys6ResultOySayAA13KCItunesAlbumVGs5Error_pGctF">searchAlbums(withQuery:<wbr>limit:<wbr>offset:<wbr>mediaType:<wbr>country:<wbr>lang:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Runs iTunes search API for albums</p>
+
+<ul>
+<li><p>Usage example:</p></li>
+</ul>
+<pre class="highlight swift"><code><span class="kt">KCITunesAPIQueryService</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">searchAlbums</span><span class="p">(</span>
+    <span class="nv">withQuery</span><span class="p">:</span> <span class="s">"Alex"</span><span class="p">,</span>
+    <span class="nv">limit</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="nv">offset</span><span class="p">:</span> <span class="n">page</span> <span class="o">*</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="nv">mediaType</span><span class="p">:</span> <span class="s">"podcast"</span><span class="p">,</span>
+    <span class="nv">country</span><span class="p">:</span> <span class="s">"US"</span><span class="p">,</span>
+    <span class="nv">lang</span><span class="p">:</span> <span class="s">"en_us"</span>
+<span class="p">)</span> <span class="p">{</span> <span class="p">[</span><span class="k">weak</span> <span class="k">self</span><span class="p">]</span> <span class="n">result</span> <span class="k">in</span>
+    <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
+        <span class="k">case</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="k">let</span> <span class="nv">albums</span><span class="p">):</span>
+        <span class="o">...</span>
+        <span class="k">case</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span>
+        <span class="o">...</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">searchAlbums</span><span class="p">(</span>
+    <span class="n">withQuery</span> <span class="nv">query</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+    <span class="nv">limit</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="nv">offset</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="nv">mediaType</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">country</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">lang</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Result</span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Structs/KCItunesAlbum.html">KCItunesAlbum</a></span><span class="p">],</span> <span class="kt">Error</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>limit</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>list limit,</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>offset</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>list / page offset,</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>mediaType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>String?</code>, refer to <code>KCITunesParamMediaType</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>country</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>String?</code>, refer to <code>KCITunesParamCountry</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>lang</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>String?</code>, refer to <code>KCITunesParamLang</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Callback of <code><a href="../Structs/KCItunesSong.html">KCItunesSong</a></code> list array, or any network error</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:37KeysocItunesSearchAPIServiceiOS_Swift23KCITunesAPIQueryServiceC13searchArtists9withQuery5limit6offset9mediaType7country4lang10completionySS_S2iSSSgA2Lys6ResultOySayAA14KCItunesArtistVGs5Error_pGctF"></a>
+                    <a name="//apple_ref/swift/Method/searchArtists(withQuery:limit:offset:mediaType:country:lang:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:37KeysocItunesSearchAPIServiceiOS_Swift23KCITunesAPIQueryServiceC13searchArtists9withQuery5limit6offset9mediaType7country4lang10completionySS_S2iSSSgA2Lys6ResultOySayAA14KCItunesArtistVGs5Error_pGctF">searchArtists(withQuery:<wbr>limit:<wbr>offset:<wbr>mediaType:<wbr>country:<wbr>lang:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Runs iTunes search API for artists</p>
+
+<ul>
+<li><p>Usage example:</p></li>
+</ul>
+<pre class="highlight swift"><code><span class="kt">KCITunesAPIQueryService</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">searchArtists</span><span class="p">(</span>
+    <span class="nv">withQuery</span><span class="p">:</span> <span class="s">"Alex"</span><span class="p">,</span>
+    <span class="nv">limit</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="nv">offset</span><span class="p">:</span> <span class="n">page</span> <span class="o">*</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="nv">mediaType</span><span class="p">:</span> <span class="s">"podcast"</span><span class="p">,</span>
+    <span class="nv">country</span><span class="p">:</span> <span class="s">"US"</span><span class="p">,</span>
+    <span class="nv">lang</span><span class="p">:</span> <span class="s">"en_us"</span>
+<span class="p">)</span> <span class="p">{</span> <span class="p">[</span><span class="k">weak</span> <span class="k">self</span><span class="p">]</span> <span class="n">result</span> <span class="k">in</span>
+    <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
+        <span class="k">case</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="k">let</span> <span class="nv">songs</span><span class="p">):</span>
+        <span class="o">...</span>
+        <span class="k">case</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span>
+        <span class="o">...</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">searchArtists</span><span class="p">(</span>
+    <span class="n">withQuery</span> <span class="nv">query</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+    <span class="nv">limit</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="nv">offset</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="nv">mediaType</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">country</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">lang</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Result</span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Structs/KCItunesArtist.html">KCItunesArtist</a></span><span class="p">],</span> <span class="kt">Error</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>limit</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>list limit,</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>offset</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>list / page offset,</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>mediaType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>String?</code>, refer to <code>KCITunesParamMediaType</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>country</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>String?</code>, refer to <code>KCITunesParamCountry</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>lang</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>String?</code>, refer to <code>KCITunesParamLang</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Callback of <code><a href="../Structs/KCItunesSong.html">KCItunesSong</a></code> list array, or any network error</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2023-09-17)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
