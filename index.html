@@ -40,6 +40,9 @@
               <li class="nav-group-task">
                 <a href="Classes/KCITunesAPIQueryService.html">KCITunesAPIQueryService</a>
               </li>
+              <li class="nav-group-task">
+                <a href="Classes/KCITunesAPIQueryServiceAsync.html">KCITunesAPIQueryServiceAsync</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -88,12 +91,142 @@
             
             <h1 id='keysocitunessearchapiserviceios-swift' class='heading'>KeysocItunesSearchAPIServiceiOS-Swift</h1>
 
-<p>A description of this package.</p>
+<p>A service package for calling iTunes search API.</p>
+<h2 id='documentation' class='heading'>Documentation</h2>
+
+<p><a href="https://vansonleung.github.io/KeysocItunesSearchAPIServiceiOS-Swift-doc/">https://vansonleung.github.io/KeysocItunesSearchAPIServiceiOS-Swift-doc/</a></p>
+<h2 id='installation' class='heading'>Installation</h2>
+
+<p>The Swift Package Manager is a tool for automating the distribution of Swift code and is integrated into the swift compiler.</p>
+
+<p>Once you have your Swift package set up, adding this package as a dependency is as easy as adding it to the dependencies value of your Package.swift.</p>
+<pre class="highlight swift"><code><span class="nv">dependencies</span><span class="p">:</span> <span class="p">[</span>
+    <span class="o">.</span><span class="nf">package</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/VansonLeung/KeysocItunesSearchAPIServiceiOS-Swift.git"</span><span class="p">)</span>
+<span class="p">]</span>
+</code></pre>
+<h2 id='usages' class='heading'>Usages</h2>
+<h4 id='import-library' class='heading'>Import library</h4>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">KeysocItunesSearchAPIServiceiOS_Swift</span>
+</code></pre>
+<h4 id='1-runs-itunes-search-api-for-songs' class='heading'>1. Runs iTunes search API for songs</h4>
+
+<ul>
+<li>Usage example:</li>
+</ul>
+<pre class="highlight swift"><code><span class="kt">KCITunesAPIQueryService</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">searchSongs</span><span class="p">(</span>
+    <span class="nv">withQuery</span><span class="p">:</span> <span class="s">"Alex"</span><span class="p">,</span>
+    <span class="nv">limit</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="nv">offset</span><span class="p">:</span> <span class="n">page</span> <span class="o">*</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="nv">mediaType</span><span class="p">:</span> <span class="s">"podcast"</span><span class="p">,</span>
+    <span class="nv">country</span><span class="p">:</span> <span class="s">"US"</span><span class="p">,</span>
+    <span class="nv">lang</span><span class="p">:</span> <span class="s">"en_us"</span>
+<span class="p">)</span> <span class="p">{</span> <span class="p">[</span><span class="k">weak</span> <span class="k">self</span><span class="p">]</span> <span class="n">result</span> <span class="k">in</span>
+    <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
+        <span class="k">case</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="k">let</span> <span class="nv">songs</span><span class="p">):</span>
+        <span class="o">...</span>
+        <span class="k">case</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span>
+        <span class="o">...</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// ... or concurrency</span>
+
+<span class="k">do</span> <span class="p">{</span>
+    <span class="k">let</span> <span class="nv">items</span> <span class="o">=</span> <span class="k">try</span> <span class="k">await</span> <span class="kt">KCITunesAPIQueryServiceAsync</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">searchSongs</span><span class="p">(</span>
+        <span class="nv">withQuery</span><span class="p">:</span> <span class="s">"Alex"</span><span class="p">,</span>
+        <span class="nv">limit</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+        <span class="nv">offset</span><span class="p">:</span> <span class="n">page</span> <span class="o">*</span> <span class="mi">10</span><span class="p">,</span>
+        <span class="nv">mediaType</span><span class="p">:</span> <span class="s">"podcast"</span><span class="p">,</span>
+        <span class="nv">country</span><span class="p">:</span> <span class="s">"US"</span><span class="p">,</span>
+        <span class="nv">lang</span><span class="p">:</span> <span class="s">"en_us"</span>
+    <span class="p">)</span>
+    <span class="o">...</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">{</span>
+    <span class="o">...</span>
+<span class="p">}</span>
+
+</code></pre>
+<h4 id='2-runs-itunes-search-api-for-albums' class='heading'>2. Runs iTunes search API for albums</h4>
+
+<ul>
+<li>Usage example:</li>
+</ul>
+<pre class="highlight swift"><code><span class="kt">KCITunesAPIQueryService</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">searchAlbums</span><span class="p">(</span>
+    <span class="nv">withQuery</span><span class="p">:</span> <span class="s">"Alex"</span><span class="p">,</span>
+    <span class="nv">limit</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="nv">offset</span><span class="p">:</span> <span class="n">page</span> <span class="o">*</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="nv">mediaType</span><span class="p">:</span> <span class="s">"podcast"</span><span class="p">,</span>
+    <span class="nv">country</span><span class="p">:</span> <span class="s">"US"</span><span class="p">,</span>
+    <span class="nv">lang</span><span class="p">:</span> <span class="s">"en_us"</span>
+<span class="p">)</span> <span class="p">{</span> <span class="p">[</span><span class="k">weak</span> <span class="k">self</span><span class="p">]</span> <span class="n">result</span> <span class="k">in</span>
+    <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
+        <span class="k">case</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="k">let</span> <span class="nv">albums</span><span class="p">):</span>
+        <span class="o">...</span>
+        <span class="k">case</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span>
+        <span class="o">...</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// ... or concurrency</span>
+
+<span class="k">do</span> <span class="p">{</span>
+    <span class="k">let</span> <span class="nv">items</span> <span class="o">=</span> <span class="k">try</span> <span class="k">await</span> <span class="kt">KCITunesAPIQueryServiceAsync</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">searchAlbums</span><span class="p">(</span>
+        <span class="nv">withQuery</span><span class="p">:</span> <span class="s">"Alex"</span><span class="p">,</span>
+        <span class="nv">limit</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+        <span class="nv">offset</span><span class="p">:</span> <span class="n">page</span> <span class="o">*</span> <span class="mi">10</span><span class="p">,</span>
+        <span class="nv">mediaType</span><span class="p">:</span> <span class="s">"podcast"</span><span class="p">,</span>
+        <span class="nv">country</span><span class="p">:</span> <span class="s">"US"</span><span class="p">,</span>
+        <span class="nv">lang</span><span class="p">:</span> <span class="s">"en_us"</span>
+        <span class="p">)</span>
+    <span class="o">...</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">{</span>
+    <span class="o">...</span>
+<span class="p">}</span>
+
+</code></pre>
+<h4 id='3-runs-itunes-search-api-for-artists' class='heading'>3. Runs iTunes search API for artists</h4>
+
+<ul>
+<li>Usage example:</li>
+</ul>
+<pre class="highlight swift"><code><span class="kt">KCITunesAPIQueryService</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">searchArtists</span><span class="p">(</span>
+    <span class="nv">withQuery</span><span class="p">:</span> <span class="s">"Alex"</span><span class="p">,</span>
+    <span class="nv">limit</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="nv">offset</span><span class="p">:</span> <span class="n">page</span> <span class="o">*</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="nv">mediaType</span><span class="p">:</span> <span class="s">"podcast"</span><span class="p">,</span>
+    <span class="nv">country</span><span class="p">:</span> <span class="s">"US"</span><span class="p">,</span>
+    <span class="nv">lang</span><span class="p">:</span> <span class="s">"en_us"</span>
+<span class="p">)</span> <span class="p">{</span> <span class="p">[</span><span class="k">weak</span> <span class="k">self</span><span class="p">]</span> <span class="n">result</span> <span class="k">in</span>
+    <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
+            <span class="k">case</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="k">let</span> <span class="nv">songs</span><span class="p">):</span>
+        <span class="o">...</span>
+        <span class="k">case</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span>
+        <span class="o">...</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// ... or concurrency</span>
+
+<span class="k">do</span> <span class="p">{</span>
+    <span class="k">let</span> <span class="nv">items</span> <span class="o">=</span> <span class="k">try</span> <span class="k">await</span> <span class="kt">KCITunesAPIQueryServiceAsync</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">searchArtists</span><span class="p">(</span>
+        <span class="nv">withQuery</span><span class="p">:</span> <span class="s">"Alex"</span><span class="p">,</span>
+        <span class="nv">limit</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+        <span class="nv">offset</span><span class="p">:</span> <span class="n">page</span> <span class="o">*</span> <span class="mi">10</span><span class="p">,</span>
+        <span class="nv">mediaType</span><span class="p">:</span> <span class="s">"podcast"</span><span class="p">,</span>
+        <span class="nv">country</span><span class="p">:</span> <span class="s">"US"</span><span class="p">,</span>
+        <span class="nv">lang</span><span class="p">:</span> <span class="s">"en_us"</span>
+    <span class="p">)</span>
+    <span class="o">...</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">{</span>
+    <span class="o">...</span>
+<span class="p">}</span>
+
+</code></pre>
 
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2023-09-17)</p>
+          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2023-09-20)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

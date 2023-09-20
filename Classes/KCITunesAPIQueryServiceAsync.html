@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>KCITunesAPIQueryService Class Reference</title>
+    <title>KCITunesAPIQueryServiceAsync Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/swift/Class/KCITunesAPIQueryService" class="dashAnchor"></a>
-    <a title="KCITunesAPIQueryService Class Reference"></a>
+    <a name="//apple_ref/swift/Class/KCITunesAPIQueryServiceAsync" class="dashAnchor"></a>
+    <a title="KCITunesAPIQueryServiceAsync Class Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a> (100% documented)</p>
@@ -29,7 +29,7 @@
       <p id="breadcrumbs">
         <a href="../index.html"> Reference</a>
         <img id="carat" src="../img/carat.png" alt=""/>
-        KCITunesAPIQueryService Class Reference
+        KCITunesAPIQueryServiceAsync Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -89,11 +89,11 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>KCITunesAPIQueryService</h1>
+            <h1>KCITunesAPIQueryServiceAsync</h1>
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">KCITunesAPIQueryService</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">KCITunesAPIQueryServiceAsync</span></code></pre>
 
                 </div>
               </div>
@@ -105,9 +105,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:37KeysocItunesSearchAPIServiceiOS_Swift23KCITunesAPIQueryServiceC6sharedACvpZ"></a>
+                    <a name="/s:37KeysocItunesSearchAPIServiceiOS_Swift28KCITunesAPIQueryServiceAsyncC6sharedACvpZ"></a>
                     <a name="//apple_ref/swift/Variable/shared" class="dashAnchor"></a>
-                    <a class="token" href="#/s:37KeysocItunesSearchAPIServiceiOS_Swift23KCITunesAPIQueryServiceC6sharedACvpZ">shared</a>
+                    <a class="token" href="#/s:37KeysocItunesSearchAPIServiceiOS_Swift28KCITunesAPIQueryServiceAsyncC6sharedACvpZ">shared</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -121,7 +121,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">shared</span><span class="p">:</span> <span class="kt">KCITunesAPIQueryService</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">shared</span><span class="p">:</span> <span class="kt">KCITunesAPIQueryServiceAsync</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -131,35 +131,36 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:37KeysocItunesSearchAPIServiceiOS_Swift23KCITunesAPIQueryServiceC11searchSongs9withQuery5limit6offset9mediaType7country4lang10completionySS_S2iSSSgA2Lys6ResultOySayAA12KCItunesSongVGs5Error_pGctF"></a>
-                    <a name="//apple_ref/swift/Method/searchSongs(withQuery:limit:offset:mediaType:country:lang:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:37KeysocItunesSearchAPIServiceiOS_Swift23KCITunesAPIQueryServiceC11searchSongs9withQuery5limit6offset9mediaType7country4lang10completionySS_S2iSSSgA2Lys6ResultOySayAA12KCItunesSongVGs5Error_pGctF">searchSongs(withQuery:<wbr>limit:<wbr>offset:<wbr>mediaType:<wbr>country:<wbr>lang:<wbr>completion:<wbr>)</a>
+                    <a name="/s:37KeysocItunesSearchAPIServiceiOS_Swift28KCITunesAPIQueryServiceAsyncC11searchSongs9withQuery5limit6offset9mediaType7country4langSayAA12KCItunesSongVGSS_S2iSSSgA2NtYaKF"></a>
+                    <a name="//apple_ref/swift/Method/searchSongs(withQuery:limit:offset:mediaType:country:lang:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:37KeysocItunesSearchAPIServiceiOS_Swift28KCITunesAPIQueryServiceAsyncC11searchSongs9withQuery5limit6offset9mediaType7country4langSayAA12KCItunesSongVGSS_S2iSSSgA2NtYaKF">searchSongs(withQuery:<wbr>limit:<wbr>offset:<wbr>mediaType:<wbr>country:<wbr>lang:<wbr>)</a>
                     </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Runs iTunes search API for songs</p>
+                        <p>[Concurrency] Runs iTunes search API for songs</p>
 
 <ul>
 <li><p>Usage example:</p></li>
 </ul>
-<pre class="highlight swift"><code><span class="kt">KCITunesAPIQueryService</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">searchSongs</span><span class="p">(</span>
+<pre class="highlight swift"><code><span class="k">do</span> <span class="p">{</span>
+  <span class="k">let</span> <span class="nv">items</span> <span class="o">=</span> <span class="k">try</span> <span class="k">await</span> <span class="kt">KCITunesAPIQueryServiceAsync</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">searchSongs</span><span class="p">(</span>
     <span class="nv">withQuery</span><span class="p">:</span> <span class="s">"Alex"</span><span class="p">,</span>
     <span class="nv">limit</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
     <span class="nv">offset</span><span class="p">:</span> <span class="n">page</span> <span class="o">*</span> <span class="mi">10</span><span class="p">,</span>
     <span class="nv">mediaType</span><span class="p">:</span> <span class="s">"podcast"</span><span class="p">,</span>
     <span class="nv">country</span><span class="p">:</span> <span class="s">"US"</span><span class="p">,</span>
     <span class="nv">lang</span><span class="p">:</span> <span class="s">"en_us"</span>
-<span class="p">)</span> <span class="p">{</span> <span class="p">[</span><span class="k">weak</span> <span class="k">self</span><span class="p">]</span> <span class="n">result</span> <span class="k">in</span>
-    <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
-        <span class="k">case</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="k">let</span> <span class="nv">songs</span><span class="p">):</span>
-        <span class="o">...</span>
-        <span class="k">case</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span>
-        <span class="o">...</span>
-    <span class="p">}</span>
+  <span class="p">)</span>
+  <span class="o">...</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">{</span>
+  <span class="o">...</span>
 <span class="p">}</span>
 </code></pre>
 
@@ -174,8 +175,7 @@
     <span class="nv">offset</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
     <span class="nv">mediaType</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
     <span class="nv">country</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">lang</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Result</span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Structs/KCItunesSong.html">KCItunesSong</a></span><span class="p">],</span> <span class="kt">Error</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+    <span class="nv">lang</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="k">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Structs/KCItunesSong.html">KCItunesSong</a></span><span class="p">]</span></code></pre>
 
                         </div>
                       </div>
@@ -243,20 +243,16 @@
                                 </div>
                               </td>
                             </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>completion</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Callback of <code><a href="../Structs/KCItunesSong.html">KCItunesSong</a></code> list array, or any network error</p>
-                                </div>
-                              </td>
-                            </tr>
                           </tbody>
                         </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p></p>
+
+<ul>
+<li>list of song item:[ KCItunesSong]</li>
+</ul>
                       </div>
                     </section>
                   </div>
@@ -264,35 +260,36 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:37KeysocItunesSearchAPIServiceiOS_Swift23KCITunesAPIQueryServiceC12searchAlbums9withQuery5limit6offset9mediaType7country4lang10completionySS_S2iSSSgA2Lys6ResultOySayAA13KCItunesAlbumVGs5Error_pGctF"></a>
-                    <a name="//apple_ref/swift/Method/searchAlbums(withQuery:limit:offset:mediaType:country:lang:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:37KeysocItunesSearchAPIServiceiOS_Swift23KCITunesAPIQueryServiceC12searchAlbums9withQuery5limit6offset9mediaType7country4lang10completionySS_S2iSSSgA2Lys6ResultOySayAA13KCItunesAlbumVGs5Error_pGctF">searchAlbums(withQuery:<wbr>limit:<wbr>offset:<wbr>mediaType:<wbr>country:<wbr>lang:<wbr>completion:<wbr>)</a>
+                    <a name="/s:37KeysocItunesSearchAPIServiceiOS_Swift28KCITunesAPIQueryServiceAsyncC12searchAlbums9withQuery5limit6offset9mediaType7country4langSayAA13KCItunesAlbumVGSS_S2iSSSgA2NtYaKF"></a>
+                    <a name="//apple_ref/swift/Method/searchAlbums(withQuery:limit:offset:mediaType:country:lang:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:37KeysocItunesSearchAPIServiceiOS_Swift28KCITunesAPIQueryServiceAsyncC12searchAlbums9withQuery5limit6offset9mediaType7country4langSayAA13KCItunesAlbumVGSS_S2iSSSgA2NtYaKF">searchAlbums(withQuery:<wbr>limit:<wbr>offset:<wbr>mediaType:<wbr>country:<wbr>lang:<wbr>)</a>
                     </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Runs iTunes search API for albums</p>
+                        <p>[Concurrency] Runs iTunes search API for albums</p>
 
 <ul>
 <li><p>Usage example:</p></li>
 </ul>
-<pre class="highlight swift"><code><span class="kt">KCITunesAPIQueryService</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">searchAlbums</span><span class="p">(</span>
+<pre class="highlight swift"><code><span class="k">do</span> <span class="p">{</span>
+  <span class="k">let</span> <span class="nv">items</span> <span class="o">=</span> <span class="k">try</span> <span class="k">await</span> <span class="kt">KCITunesAPIQueryServiceAsync</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">searchAlbumss</span><span class="p">(</span>
     <span class="nv">withQuery</span><span class="p">:</span> <span class="s">"Alex"</span><span class="p">,</span>
     <span class="nv">limit</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
     <span class="nv">offset</span><span class="p">:</span> <span class="n">page</span> <span class="o">*</span> <span class="mi">10</span><span class="p">,</span>
     <span class="nv">mediaType</span><span class="p">:</span> <span class="s">"podcast"</span><span class="p">,</span>
     <span class="nv">country</span><span class="p">:</span> <span class="s">"US"</span><span class="p">,</span>
     <span class="nv">lang</span><span class="p">:</span> <span class="s">"en_us"</span>
-<span class="p">)</span> <span class="p">{</span> <span class="p">[</span><span class="k">weak</span> <span class="k">self</span><span class="p">]</span> <span class="n">result</span> <span class="k">in</span>
-    <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
-        <span class="k">case</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="k">let</span> <span class="nv">albums</span><span class="p">):</span>
-        <span class="o">...</span>
-        <span class="k">case</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span>
-        <span class="o">...</span>
-    <span class="p">}</span>
+  <span class="p">)</span>
+  <span class="o">...</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">{</span>
+  <span class="o">...</span>
 <span class="p">}</span>
 </code></pre>
 
@@ -307,8 +304,7 @@
     <span class="nv">offset</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
     <span class="nv">mediaType</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
     <span class="nv">country</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">lang</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Result</span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Structs/KCItunesAlbum.html">KCItunesAlbum</a></span><span class="p">],</span> <span class="kt">Error</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+    <span class="nv">lang</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="k">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Structs/KCItunesAlbum.html">KCItunesAlbum</a></span><span class="p">]</span></code></pre>
 
                         </div>
                       </div>
@@ -376,20 +372,16 @@
                                 </div>
                               </td>
                             </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>completion</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Callback of <code><a href="../Structs/KCItunesSong.html">KCItunesSong</a></code> list array, or any network error</p>
-                                </div>
-                              </td>
-                            </tr>
                           </tbody>
                         </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p></p>
+
+<ul>
+<li>list of song item:[ KCItunesAlbums]</li>
+</ul>
                       </div>
                     </section>
                   </div>
@@ -397,35 +389,36 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:37KeysocItunesSearchAPIServiceiOS_Swift23KCITunesAPIQueryServiceC13searchArtists9withQuery5limit6offset9mediaType7country4lang10completionySS_S2iSSSgA2Lys6ResultOySayAA14KCItunesArtistVGs5Error_pGctF"></a>
-                    <a name="//apple_ref/swift/Method/searchArtists(withQuery:limit:offset:mediaType:country:lang:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:37KeysocItunesSearchAPIServiceiOS_Swift23KCITunesAPIQueryServiceC13searchArtists9withQuery5limit6offset9mediaType7country4lang10completionySS_S2iSSSgA2Lys6ResultOySayAA14KCItunesArtistVGs5Error_pGctF">searchArtists(withQuery:<wbr>limit:<wbr>offset:<wbr>mediaType:<wbr>country:<wbr>lang:<wbr>completion:<wbr>)</a>
+                    <a name="/s:37KeysocItunesSearchAPIServiceiOS_Swift28KCITunesAPIQueryServiceAsyncC13searchArtists9withQuery5limit6offset9mediaType7country4langSayAA14KCItunesArtistVGSS_S2iSSSgA2NtYaKF"></a>
+                    <a name="//apple_ref/swift/Method/searchArtists(withQuery:limit:offset:mediaType:country:lang:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:37KeysocItunesSearchAPIServiceiOS_Swift28KCITunesAPIQueryServiceAsyncC13searchArtists9withQuery5limit6offset9mediaType7country4langSayAA14KCItunesArtistVGSS_S2iSSSgA2NtYaKF">searchArtists(withQuery:<wbr>limit:<wbr>offset:<wbr>mediaType:<wbr>country:<wbr>lang:<wbr>)</a>
                     </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Runs iTunes search API for artists</p>
+                        <p>[Concurrency] Runs iTunes search API for artists</p>
 
 <ul>
 <li><p>Usage example:</p></li>
 </ul>
-<pre class="highlight swift"><code><span class="kt">KCITunesAPIQueryService</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">searchArtists</span><span class="p">(</span>
+<pre class="highlight swift"><code><span class="k">do</span> <span class="p">{</span>
+  <span class="k">let</span> <span class="nv">items</span> <span class="o">=</span> <span class="k">try</span> <span class="k">await</span> <span class="kt">KCITunesAPIQueryServiceAsync</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">searchArtists</span><span class="p">(</span>
     <span class="nv">withQuery</span><span class="p">:</span> <span class="s">"Alex"</span><span class="p">,</span>
     <span class="nv">limit</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
     <span class="nv">offset</span><span class="p">:</span> <span class="n">page</span> <span class="o">*</span> <span class="mi">10</span><span class="p">,</span>
     <span class="nv">mediaType</span><span class="p">:</span> <span class="s">"podcast"</span><span class="p">,</span>
     <span class="nv">country</span><span class="p">:</span> <span class="s">"US"</span><span class="p">,</span>
     <span class="nv">lang</span><span class="p">:</span> <span class="s">"en_us"</span>
-<span class="p">)</span> <span class="p">{</span> <span class="p">[</span><span class="k">weak</span> <span class="k">self</span><span class="p">]</span> <span class="n">result</span> <span class="k">in</span>
-    <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
-        <span class="k">case</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="k">let</span> <span class="nv">songs</span><span class="p">):</span>
-        <span class="o">...</span>
-        <span class="k">case</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span>
-        <span class="o">...</span>
-    <span class="p">}</span>
+  <span class="p">)</span>
+  <span class="o">...</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">{</span>
+  <span class="o">...</span>
 <span class="p">}</span>
 </code></pre>
 
@@ -440,8 +433,7 @@
     <span class="nv">offset</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
     <span class="nv">mediaType</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
     <span class="nv">country</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">lang</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Result</span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Structs/KCItunesArtist.html">KCItunesArtist</a></span><span class="p">],</span> <span class="kt">Error</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+    <span class="nv">lang</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="k">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Structs/KCItunesArtist.html">KCItunesArtist</a></span><span class="p">]</span></code></pre>
 
                         </div>
                       </div>
@@ -509,20 +501,16 @@
                                 </div>
                               </td>
                             </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>completion</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Callback of <code><a href="../Structs/KCItunesSong.html">KCItunesSong</a></code> list array, or any network error</p>
-                                </div>
-                              </td>
-                            </tr>
                           </tbody>
                         </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p></p>
+
+<ul>
+<li>list of song item:[ KCItunesArtist]</li>
+</ul>
                       </div>
                     </section>
                   </div>
